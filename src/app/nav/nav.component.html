@@ -1,0 +1,16 @@
+<nav class="navbar bg-success navbar-expand-lg" style="--bs-bg-opacity: .5;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">{{navItems.logo_name}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li *ngFor="let item of navItems.menu_items;" class="nav-item ">
+          <a class="nav-link text-white" aria-current="page" href="#">{{item}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

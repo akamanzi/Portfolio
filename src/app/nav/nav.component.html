@@ -1,16 +1,24 @@
-<nav class="navbar bg-success navbar-expand-lg" style="--bs-bg-opacity: .5;">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">{{navItems.logo_name}}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
+<div class="app-banner">
+  <nav class="navbar navbar-expand-lg navbar-light" style="--bs-bg-opacity: .5;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">{{navItems.logo_name}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
 
-        <li *ngFor="let item of navItems.menu_items;" class="nav-item ">
-          <a class="nav-link text-white" aria-current="page" href="#">{{item}}</a>
-        </li>
-      </ul>
+          <li *ngFor="let item of navItems.menu_items;" class="nav-item ">
+            <a class="nav-link text-white" aria-current="page" href="#">{{item}}</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <div class="container-fluid container">
+    <img src="../../assets/img/profile_pic.jpg" class="rounded-circle mb-3 profile-pic"
+  alt="Avatar" />
+    <h4 class="mb-2 banner-title"> <strong>{{banner_content.author_name}}</strong></h4>
+    <p class="lead banner-subtitle"><strong>{{banner_content.summary}}</strong></p>
   </div>
-</nav>
+</div>

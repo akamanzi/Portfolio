@@ -1,3 +1,27 @@
 .navbar-text {
   color: white;
 }
+.app-banner {
+  background-image: url('../../assets/img/banner-bg-4.jpg');
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner-title {
+  text-align: center;
+  color: white;
+}
+.banner-subtitle {
+  text-align: center;
+  color: white;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+}

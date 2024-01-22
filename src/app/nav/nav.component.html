@@ -9,7 +9,7 @@
         <ul class="navbar-nav">
 
           <li *ngFor="let item of navItems.menu_items;" class="nav-item ">
-            <a class="nav-link text-white" aria-current="page" href="#">{{item}}</a>
+            <a class="nav-link text-white" aria-current="page" routerLink="{{item | lowercase}}">{{item}}</a>
           </li>
         </ul>
       </div>

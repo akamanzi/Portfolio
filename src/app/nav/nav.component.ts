@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [NgbNavModule, CommonModule],
+  imports: [NgbNavModule, CommonModule, RouterModule],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })

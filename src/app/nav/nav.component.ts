@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 export class NavComponent {
   navItems = {
     logo_name : "CREATIVE CV",
-    menu_items: ["ABOUT", "SKILLS", "PORTFOLIO", "EXPERINCE", "CONTACT"],
+    menu_items: ["ABOUT", "SKILLS", "PORTFOLIO", "EXPERIENCE", "CONTACT"],
   }
   banner_content = {
     author_name: "Arnold Kamanzi",

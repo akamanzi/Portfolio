@@ -5,13 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class SkillsService {
   private technical_skills = [
-    {name: "HTML", percentage: "100%"},
-    {name: "CSS", percentage: "85%"},
-    {name: "C#", percentage: "85%"},
-    {name: "Javascript", percentage: "70%"},
-    {name: "Python", percentage: "90%"},
-    {name: "Angular", percentage: "65%"
-  }
+    {name: "HTML", level: "Proficient"},
+    {name: "CSS", level: "Proficient"},
+    {name: "C#", level: "Beginner"},
+    {name: "Javascript", level: "Proficient"},
+    {name: "Python", level: "Proficient"},
+    {name: "Angular", level: "Intermediate"}
 ]
   constructor() { }
   getSkills(){

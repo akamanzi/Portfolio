@@ -1,0 +1,16 @@
+<div  class="row">
+    <div *ngFor="let project of project_info" class=" custom-align card col-sm-4" style="width: 25rem;">
+      <img class="card-img-top" src="../../assets/img/card-image.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{project.name}}</h5>
+        <p class="card-text">{{project.description}}</p>
+        <button (click)="loadProjectModal(project)" class="btn btn-primary">Check it out</button>
+      </div>
+    </div>
+</div>
+<div *ngIf="showDetails" class="container">
+  <div class="text-center">
+    <p> {{ project_details.name }}!</p>
+    <p> {{project_details.description}}</p>
+  </div>
+</div>
